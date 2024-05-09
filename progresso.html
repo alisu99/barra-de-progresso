@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-
         /* Estilo para a barra de progresso */
         .progress-circle {
             width: 150px;
             height: 150px;
             position: relative;
-            margin-top: 20px;
+            margin: 20px auto;
+            /* Centraliza horizontalmente */
         }
 
         .progress-circle svg {
@@ -40,26 +40,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
+    <center>
+        <div class="container">
             <div class="percent">
                 <div class="progress-circle">
                     <svg>
-                        <!-- <circle cx="70" cy="70" r="70"></circle> -->
-                        <circle class="progress-bar" cx="70" cy="70" r="70"></circle>
+                        <circle cx="75" cy="75" r="70"></circle>
+                        <circle class="progress-bar" cx="75" cy="75" r="70"></circle>
                     </svg>
                     <div class="number">
                         <h2><span id="progresso1">90</span>%</h2>
                     </div>
                 </div>
             </div>
-            <p class="text">Progresso 1</p>
         </div>
-    </div>
-    <div class="input-container">
-        <input type="number" id="inputProgresso" placeholder="Insira o progresso">
-        <button onclick="atualizarProgresso()">Atualizar</button>
-    </div>
+        <div class="input-container" style="text-align: center;">
+            <input type="number" id="inputProgresso" placeholder="Insira o progresso">
+            <button onclick="atualizarProgresso()">Atualizar</button>
+        </div>
+    </center>
     <script>
         const progresso1 = document.getElementById("progresso1");
         const inputProgresso = document.getElementById("inputProgresso");
