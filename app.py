@@ -9,9 +9,7 @@ def index():
 
 @app.route('/progresso')
 def obter_progresso():
-    lista = [ 50, 18 ,1, 1 ,1 , 25, 50, 18, 1, 1 ,1, 1 ,1 ,1 ,1 ,1 ,1 , 50, 18, 1, 1 ,1, 1 ,1 ,1 ,1 ,1 ,1 , 25, 50, 18, 1, 1 ,1, 1 ,1 ,1 ,1 ,1 ,1 ,]
-    numero_progresso = len(lista)
-    return jsonify({'progresso': numero_progresso})
+    return jsonify({'progresso': 68})
 
 if __name__ == '__main__':
     app.run(debug=True)
